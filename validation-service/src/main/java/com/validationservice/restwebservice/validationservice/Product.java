@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Product")
+@Table(name="ProductTable")
 public class Product {
 	@Id
 	@GeneratedValue
@@ -46,6 +46,11 @@ public class Product {
 	public List<FulfilmentCenter> getFulfilmentCenter() {
 		return fulfilmentCenter;
 	}
+	//@Override
+//	public String toString() {
+//		return "Product [productId=" + productId + ", productName=" + productName + ", fulfilmentCenter="
+//				+ fulfilmentCenter + "]";
+//	}
 	
 	
 }
